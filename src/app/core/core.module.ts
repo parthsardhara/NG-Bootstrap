@@ -8,15 +8,16 @@ import { ModalComponent } from './modal/modal.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TimepickerComponent } from './timepicker/timepicker.component';
 import { AlertComponent } from './alert/alert.component';
+import { ToastComponent } from './toast/toast.component';
 
 @NgModule({
-  declarations: [DatepickerComponent, DropdownComponent, ModalComponent, CarouselComponent, TimepickerComponent, AlertComponent],
+  declarations: [DatepickerComponent, DropdownComponent, ModalComponent, CarouselComponent, TimepickerComponent, AlertComponent, ToastComponent],
   imports: [
     CommonModule,
     FormsModule,
     NgbModule.forRoot(),
 
   ],
-  exports:[DatepickerComponent, DropdownComponent, ModalComponent, CarouselComponent, TimepickerComponent,AlertComponent]
+  exports:[DatepickerComponent, DropdownComponent, ModalComponent, CarouselComponent, TimepickerComponent,AlertComponent, ToastComponent]
 })
 export class CoreModule { }
