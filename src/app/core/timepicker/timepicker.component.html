@@ -1,0 +1,9 @@
+<div class="container">
+  <ngb-timepicker [(ngModel)]="time" [meridian]="meridian"></ngb-timepicker>
+  <button class="btn btn-sm btn-outline-{{meridian ? 'success' : 'danger'}}" (click)="toggleMeridian()">
+    Meridian - {{meridian ? "ON" : "OFF"}}
+  </button>
+  <hr>
+  <button class="btn btn-sm btn-outline-info" (click)="selectedTimePicker()">Time</button>
+  <!-- <pre>Selected time: {{time | json}}</pre> -->
+</div>

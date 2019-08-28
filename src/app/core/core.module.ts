@@ -6,15 +6,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { ModalComponent } from './modal/modal.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { TimepickerComponent } from './timepicker/timepicker.component';
 
 @NgModule({
-  declarations: [DatepickerComponent, DropdownComponent, ModalComponent, CarouselComponent],
+  declarations: [DatepickerComponent, DropdownComponent, ModalComponent, CarouselComponent, TimepickerComponent],
   imports: [
     CommonModule,
     FormsModule,
     NgbModule.forRoot(),
 
   ],
-  exports:[DatepickerComponent, DropdownComponent, ModalComponent, CarouselComponent]
+  exports:[DatepickerComponent, DropdownComponent, ModalComponent, CarouselComponent, TimepickerComponent]
 })
 export class CoreModule { }
